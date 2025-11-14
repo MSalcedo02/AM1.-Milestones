@@ -1,7 +1,3 @@
-from numpy import concatenate, zeros, reshape, array, linspace
-from numpy.linalg import norm, solve 
-import matplotlib.pyplot as plt
-
 from numpy import zeros, linspace, array, concatenate
 from numpy.linalg import norm, solve
 import matplotlib.pyplot as plt
@@ -87,4 +83,5 @@ plt.title("Trayectorias en el plano")
 plt.axis("equal")
 plt.grid(True)
 plt.legend()
+
 plt.show()
