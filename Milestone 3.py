@@ -191,10 +191,11 @@ def test_convergence():
     plt.show()
 
 
-# LLAMADA A TESTS (Descomentar la que quieras)
+# LLAMADA A TESTS 
 
 
 # test_Cauchy()
 # test_error()
 test_convergence()
+
 
