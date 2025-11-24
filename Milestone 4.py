@@ -61,8 +61,6 @@ def RK4(U1, t1, t2, F):
     k4 = F(U1 + dt*k3, t2)
     return U1 + (dt/6)*(k1 + 2*k2 + 2*k3 + k4)
 
-# --------- LEAP–FROG (2º orden, explícito) -------------
-
 def LeapFrog(U1, t1, t2, F):
     dt = t2 - t1
     # U = [x, v]
@@ -187,7 +185,7 @@ regiones = {
     "Leap-Frog": lambda w: R_LF(w)
 }
 
-cmap = "turbo"   # puedes cambiar: "plasma", "inferno", "magma", "turbo"
+cmap = "turbo"   
 
 fig, axs = plt.subplots(2, 3, figsize=(15, 10))
 axs = axs.flatten()
@@ -216,4 +214,5 @@ for nombre, func in regiones.items():
 axs[-1].axis("off")
 
 plt.tight_layout()
+
 plt.show()
