@@ -162,8 +162,8 @@ def test_convergence():
     T = 40
     Ns = [500, 1000, 2000, 4000]
 
-    methods = [Euler, Inverse_Euler, Crank_Nicolson, RK4]
-    names = ["Euler", "Inverse Euler", "Crank-Nicolson", "RK4"]
+    methods = [Euler, Crank_Nicolson, RK4]
+    names = ["Euler", "Crank-Nicolson", "RK4"]
     q_values = [1, 1, 2, 4]   # órdenes teóricos
 
     plt.figure()
@@ -197,5 +197,6 @@ def test_convergence():
 # test_Cauchy()
 # test_error()
 test_convergence()
+
 
 
